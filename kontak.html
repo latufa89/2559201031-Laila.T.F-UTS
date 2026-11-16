@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - Portofolio Latufa</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Latufa</a>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="katalog.html">Karya</a></li>
+        <li><a href="kontak.html" aria-current="page">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="panel">
+      <h1>Hubungi saya</h1>
+      <p class="lead">Isi formulir di bawah. Semua kolom wajib diisi.</p>
+      <form action="#" method="post">
+        <p>
+          <label for="nama">Nama lengkap</label>
+          <input type="text" id="nama" name="nama" required autocomplete="name">
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </p>
+        <p>
+          <label for="hp">Nomor HP (10 sampai 13 digit angka)</label>
+          <input type="tel" id="hp" name="hp" required pattern="[0-9]{10,13}" inputmode="numeric" title="Isi 10 sampai 13 digit angka, tanpa spasi atau tanda hubung" autocomplete="tel">
+        </p>
+        <p>
+          <label for="keperluan">Keperluan</label>
+          <select id="keperluan" name="keperluan" required>
+            <option value="">Pilih keperluan</option>
+            <option value="kolaborasi">Ajakan kolaborasi proyek</option>
+            <option value="magang">Peluang magang atau kerja</option>
+            <option value="tanya">Pertanyaan tentang karya</option>
+            <option value="lainnya">Lainnya</option>
+          </select>
+        </p>
+        <p>
+          <label for="pesan">Pesan (20 sampai 500 karakter)</label>
+          <textarea id="pesan" name="pesan" rows="6" required minlength="20" maxlength="500"></textarea>
+        </p>
+        <p><button class="btn" type="submit">Kirim pesan</button></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 LAILA. Mahasiswa Sistem & Teknologi Informasi.</p>
+  </footer>
+</body>
+</html>
